@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Peserta Marathon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="landing-header">
+        <div class="landing-image">
+            <img src="running-marathon.jpg" alt="Running Marathon">
+        </div>
+        <div class="landing-content">
+            <h1>RUNNING MARATHON 2024</h1>
+            <p>Sambut tantangan Anda di event lari tahunan kami! Bergabunglah dengan ribuan pelari dari seluruh dunia untuk merayakan semangat olahraga dan mencapai tujuan pribadi Anda di tahun ini.</p>
+            <button>READ MORE</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Registrasi Peserta Marathon</h2>
+            <form id="registrationForm">
+                <div class="input-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="dob">Tanggal Lahir</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="gender">Jenis Kelamin</label>
+                    <select id="gender" name="gender" required>
+                        <option value="Pria">Pria</option>
+                        <option value="Wanita">Wanita</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="city">Asal Kota</label>
+                    <input type="text" id="city" name="city" placeholder="Masukkan asal kota" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Nomor Telepon</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="category">Kategori Perlombaan</label>
+                    <select id="category" name="category" required>
+                        <option value="5k">Lari 5K</option>
+                        <option value="10k">Lari 10K</option>
+                        <option value="20k">Lari 20K</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="medicalHistory">Riwayat Penyakit?</label>
+                    <select id="medicalHistory" name="medicalHistory" required>
+                        <option value="Ya">Ya</option>
+                        <option value="Tidak">Tidak</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="shirtSize">Ukuran Kaos</label>
+                    <select id="shirtSize" name="shirtSize" required>
+                        <option value="S">S</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                </div>
+
+                <div class="input-group checkbox-group">
+                    <label>
+                        <input type="checkbox" id="agreement" name="agreement" required>
+                        Menyetujui syarat dan ketentuan, serta menandatangani persetujuan.
+                    </label>
+                </div>
+
+                <button type="submit">Daftar</button>
+            </form>
+        </div>
+        <table id="participantTable">
+            <thead>
+                <tr>
+                    <th>Nama Lengkap</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Asal Kota</th>
+                    <th>Nomor Telepon</th>
+                    <th>Kategori Perlombaan</th>
+                    <th>Riwayat Penyakit</th>
+                    <th>Ukuran Kaos</th>
+                    <th>Persetujuan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data peserta akan ditambahkan di sini -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
